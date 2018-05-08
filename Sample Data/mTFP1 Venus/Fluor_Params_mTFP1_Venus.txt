@@ -1,0 +1,33 @@
+exp_type = 'FRET'; % options 'FRET', 'Spectra'
+suffix = 'PRN'; % file extension of individual spectra (.PRN, .TXT supported)
+
+% Files from which baseline emission and absorption data should be taken:
+em_spectra_file = 'Andy_070814_Em.xls';
+abs_spectra_file = 'Andy_070814_Abs.xls';
+
+% Donor and acceptor fluorophore names
+donor = 'mTFP1';
+acceptor = 'Venus';
+
+% Donor and acceptor fluorophore excitation wavelengths
+lambda_donor = 458;
+lambda_acceptor = 505;
+
+% What are your experimental files called?
+exp_filename = 'PRNs';
+exp_cols = {'TVM'};
+
+% What are your corresponding background files called?
+bkg_sub = 'y';
+bkg_cols = {'BLK'};
+
+% FRET parameters
+FRET_width = 5;
+
+% Data preprocessing/smoothing (don't smooth or normalize for FRET analysis)
+trunc = 'n';
+smth = 'n';
+nrm = 'n';
+
+% Plot Axis limits
+ylim = [0 1.5];

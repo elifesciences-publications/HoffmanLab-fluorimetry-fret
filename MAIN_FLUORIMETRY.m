@@ -62,3 +62,4 @@ if strcmpi(exp_type,'FRET')
     RunFluorFRET;
 end
 rmpath(genpath(pwd));
+rmpath(genpath(folder));
